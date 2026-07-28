@@ -579,3 +579,40 @@ font-size:16px;
 }
 
 }
+@media(max-width:900px){
+
+nav{
+
+display:none;
+
+}
+
+header{
+
+padding:10px;
+
+}
+
+.hero-logo{
+
+height:80px !important;
+
+}
+
+.hero h1{
+
+font-size:32px;
+
+letter-spacing:3px;
+
+line-height:1.2;
+
+}
+
+.hero h2{
+
+font-size:17px;
+
+}
+
+}
