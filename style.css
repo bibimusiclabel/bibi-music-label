@@ -461,3 +461,9 @@ color:white !important;
 .logo .music-label{
 color:#b00020 !important;
 }
+.hero-content{
+
+position:relative;
+z-index:2;
+
+}
