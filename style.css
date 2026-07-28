@@ -467,3 +467,81 @@ position:relative;
 z-index:2;
 
 }
+.hero-content{
+
+text-align:center;
+
+animation:heroAppear 2s ease;
+
+}
+
+
+.hero-logo{
+
+width:180px;
+
+height:auto;
+
+margin-bottom:25px;
+
+filter:drop-shadow(0 0 25px rgba(176,0,32,.8));
+
+animation:logoMove 2s ease;
+
+}
+
+
+
+.hero h1{
+
+font-size:70px;
+
+letter-spacing:8px;
+
+margin-bottom:20px;
+
+}
+
+
+
+@keyframes heroAppear{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+
+@keyframes logoMove{
+
+from{
+
+opacity:0;
+
+transform:scale(.7);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
