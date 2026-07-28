@@ -478,13 +478,13 @@ animation:heroAppear 2s ease;
 
 .hero-logo{
 
-width:100px;
+width:60px;
 
 height:auto;
 
-margin-bottom:25px;
+margin-bottom:20px;
 
-filter:drop-shadow(0 0 20px rgba(176,0,32,.8));
+filter:drop-shadow(0 0 15px rgba(176,0,32,.8));
 
 animation:logoMove 2s ease;
 
