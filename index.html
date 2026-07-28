@@ -1,389 +1,402 @@
 <!DOCTYPE html>
 <html lang="el">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>BIBI MUSIC LABEL</title>
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
-}
-
-body{
-background:#090909;
-color:white;
-}
-
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-padding:20px 60px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(0,0,0,.90);
-border-bottom:2px solid #b00020;
-z-index:1000;
-}
-
-.logo{
-font-size:30px;
-font-weight:bold;
-color:#ffffff;
-letter-spacing:3px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-font-size:18px;
-transition:.3s;
-}
-
-nav a:hover{
-color:#b00020;
-}
-
-.hero{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-background:
-linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.88)),
-radial-gradient(circle,#45000d 0%,#090909 70%);
-}
-
-.hero h1{
-font-size:80px;
-color:white;
-margin-bottom:15px;
-}
-
-.hero h2{
-font-size:30px;
-font-weight:300;
-margin-bottom:35px;
-color:#d6d6d6;
-}
-
-.button{
-display:inline-block;
-padding:16px 40px;
-background:#b00020;
-color:white;
-text-decoration:none;
-border-radius:50px;
-font-size:18px;
-transition:.3s;
-}
-
-.button:hover{
-background:#d40028;
-transform:scale(1.05);
-}
-
-section{
-padding:90px 10%;
-}
-
-.section-title{
-font-size:40px;
-margin-bottom:20px;
-color:#b00020;
-}
-
-.cards{
-display:flex;
-gap:30px;
-flex-wrap:wrap;
-margin-top:40px;
-}
-
-.card{
-flex:1;
-min-width:250px;
-background:#151515;
-padding:35px;
-border-radius:15px;
-border:1px solid #2f2f2f;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-border-color:#b00020;
-}
-
-.card h3{
-color:white;
-margin-bottom:15px;
-}
-
-.card p{
-color:#cccccc;
-line-height:1.6;
-}
-
-footer{
-padding:40px;
-text-align:center;
-background:#111;
-border-top:1px solid #333;
-color:#999;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
+
 <body>
+
 
 <header>
 
 <div class="logo">
-BIBI MUSIC LABEL
+
+<img src="logo.png" alt="BIBI Music Label">
+
+<span>BIBI MUSIC LABEL</span>
+
 </div>
+
 
 <nav>
 
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Artists</a>
-<a href="#">Releases</a>
-<a href="#">Services</a>
-<a href="#">Contact</a>
+<a href="#home">
+<span class="lang-el">Αρχική</span>
+<span class="lang-en">Home</span>
+</a>
+
+<a href="#about">
+<span class="lang-el">Σχετικά</span>
+<span class="lang-en">About</span>
+</a>
+
+
+<a href="#artists">
+<span class="lang-el">Καλλιτέχνες</span>
+<span class="lang-en">Artists</span>
+</a>
+
+
+<a href="#releases">
+<span class="lang-el">Κυκλοφορίες</span>
+<span class="lang-en">Releases</span>
+</a>
+
+
+<a href="#contact">
+<span class="lang-el">Επικοινωνία</span>
+<span class="lang-en">Contact</span>
+</a>
+
+
+<button onclick="setLanguage('el')">
+GR
+</button>
+
+<button onclick="setLanguage('en')">
+EN
+</button>
+
 
 </nav>
 
+
 </header>
 
-<section class="hero">
 
-<div>
 
-<h1>BIBI MUSIC LABEL</h1>
 
-<h2>Independent Record Label</h2>
+<section id="home" class="hero">
 
-<a href="#" class="button">DISCOVER MORE</a>
+
+<div class="hero-content">
+
+
+<h1>
+BIBI MUSIC LABEL
+</h1>
+
+
+<h2 class="lang-el">
+Η νέα γενιά μουσικής δημιουργίας
+</h2>
+
+
+<h2 class="lang-en">
+The next generation of music creation
+</h2>
+
+
+
+<a href="#about" class="btn">
+
+<span class="lang-el">
+Ανακαλύψτε μας
+</span>
+
+<span class="lang-en">
+Discover More
+</span>
+
+</a>
+
 
 </div>
+
 
 </section>
 
-<section>
 
-<h2 class="section-title">ABOUT US</h2>
 
-<p style="font-size:20px;line-height:1.8;color:#cccccc;max-width:900px;">
 
-BIBI Music Label is an independent record label dedicated to discovering,
-developing and promoting talented artists through professional music production,
-digital distribution and strategic promotion in Greece and internationally.
 
-</p>
-
-</section>
-
-<section>
-
-<h2 class="section-title">OUR SERVICES</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>Music Distribution</h3>
-
-<p>
-Worldwide release distribution on all major streaming platforms.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Artist Development</h3>
-
-<p>
-Professional guidance and career development for emerging artists.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Promotion</h3>
-
-<p>
-Digital marketing, branding and audience growth strategies.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<footer>
-
-© 2026 BIBI MUSIC LABEL • All Rights Reserved
-
-</footer>
-
-</body>
-
-</html><!-- ABOUT -->
 
 <section id="about" class="section">
 
-<h2 class="lang-el">Σχετικά με εμάς</h2>
-<h2 class="lang-en" style="display:none;">About Us</h2>
+
+<h2 class="title">
+
+<span class="lang-el">
+Σχετικά με εμάς
+</span>
+
+<span class="lang-en">
+About Us
+</span>
+
+</h2>
+
+
 
 <p class="lang-el">
-Η BIBI MUSIC LABEL είναι μια σύγχρονη ανεξάρτητη δισκογραφική εταιρεία με στόχο
-την ανάδειξη νέων καλλιτεχνών και τη δημιουργία μουσικής υψηλής ποιότητας.
-Συνδυάζουμε δημιουργικότητα, επαγγελματισμό και πάθος για τη μουσική.
+
+Η BIBI MUSIC LABEL είναι μια ανεξάρτητη δισκογραφική εταιρεία
+με στόχο την ανάπτυξη νέων καλλιτεχνών,
+την παραγωγή μουσικής υψηλής ποιότητας
+και τη δημιουργία δυνατών μουσικών projects.
+
 </p>
 
-<p class="lang-en" style="display:none;">
-BIBI MUSIC LABEL is an independent record label dedicated to discovering new
-artists and producing high-quality music. We combine creativity,
-professionalism and passion to build successful music careers.
+
+
+<p class="lang-en">
+
+BIBI MUSIC LABEL is an independent record label focused on
+developing new artists, producing high quality music
+and creating powerful music projects.
+
 </p>
+
+
 
 </section>
 
-<!-- ARTISTS -->
+
+
+
+
+
+
 
 <section id="artists" class="section dark">
 
-<h2 class="lang-el">Καλλιτέχνες</h2>
-<h2 class="lang-en" style="display:none;">Artists</h2>
+
+<h2 class="title">
+
+<span class="lang-el">
+Καλλιτέχνες
+</span>
+
+<span class="lang-en">
+Artists
+</span>
+
+</h2>
+
+
 
 <div class="cards">
 
-<div class="card">
-<h3>Artist 1</h3>
-<p class="lang-el">
-Σύντομα διαθέσιμο.
-</p>
-<p class="lang-en" style="display:none;">
-Coming Soon.
-</p>
-</div>
 
 <div class="card">
-<h3>Artist 2</h3>
-<p class="lang-el">
-Σύντομα διαθέσιμο.
+
+<h3>
+Artist 01
+</h3>
+
+<p>
+
+<span class="lang-el">
+Νέος καλλιτέχνης σύντομα.
+</span>
+
+<span class="lang-en">
+New artist coming soon.
+</span>
+
 </p>
-<p class="lang-en" style="display:none;">
-Coming Soon.
-</p>
+
 </div>
+
+
 
 <div class="card">
-<h3>Artist 3</h3>
-<p class="lang-el">
-Σύντομα διαθέσιμο.
+
+<h3>
+Artist 02
+</h3>
+
+<p>
+
+<span class="lang-el">
+Νέος καλλιτέχνης σύντομα.
+</span>
+
+<span class="lang-en">
+New artist coming soon.
+</span>
+
 </p>
-<p class="lang-en" style="display:none;">
-Coming Soon.
-</p>
-</div>
 
 </div>
+
+
+
+<div class="card">
+
+<h3>
+Artist 03
+</h3>
+
+<p>
+
+<span class="lang-el">
+Νέος καλλιτέχνης σύντομα.
+</span>
+
+<span class="lang-en">
+New artist coming soon.
+</span>
+
+</p>
+
+</div>
+
+
+</div>
+
 
 </section>
 
-<!-- RELEASES -->
+
+
+
+
+
 
 <section id="releases" class="section">
 
-<h2 class="lang-el">Κυκλοφορίες</h2>
-<h2 class="lang-en" style="display:none;">Releases</h2>
+
+<h2 class="title">
+
+<span class="lang-el">
+Κυκλοφορίες
+</span>
+
+<span class="lang-en">
+Releases
+</span>
+
+</h2>
+
+
+
 
 <div class="cards">
 
-<div class="card">
-<h3>Single #1</h3>
-<p>2026</p>
-</div>
 
 <div class="card">
-<h3>EP #1</h3>
-<p>2026</p>
+
+<h3>
+Single
+</h3>
+
+<p>
+Coming Soon
+</p>
+
 </div>
+
+
 
 <div class="card">
-<h3>Album #1</h3>
-<p>Coming Soon</p>
-</div>
+
+<h3>
+EP
+</h3>
+
+<p>
+Coming Soon
+</p>
 
 </div>
 
-</section><!-- CONTACT -->
+
+
+<div class="card">
+
+<h3>
+Album
+</h3>
+
+<p>
+Coming Soon
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
 
 <section id="contact" class="section dark">
 
-<h2 class="lang-el">Επικοινωνία</h2>
-<h2 class="lang-en" style="display:none;">Contact</h2>
 
-<div class="contact-box">
+<h2 class="title">
+
+<span class="lang-el">
+Επικοινωνία
+</span>
+
+<span class="lang-en">
+Contact
+</span>
+
+</h2>
+
+
 
 <p>
 📧 info@bibimusiclabel.com
 </p>
 
-<p>
-📱 +30 690 0000000
-</p>
 
 <p>
-Instagram:
-@bibimusiclabel
+Instagram: @bibimusiclabel
 </p>
 
-</div>
+
+<p>
+YouTube: BIBI MUSIC LABEL
+</p>
+
+
 
 </section>
 
+
+
+
+
+
+
+
 <footer>
 
-<p class="lang-el">
-© 2026 BIBI MUSIC LABEL • Με επιφύλαξη παντός δικαιώματος
+
+<p>
+
+© 2026 BIBI MUSIC LABEL
+
 </p>
 
-<p class="lang-en" style="display:none;">
-© 2026 BIBI MUSIC LABEL • All Rights Reserved
-</p>
 
 </footer>
 
-<script>
 
-function setLanguage(lang){
 
-document.querySelectorAll(".lang-el").forEach(el=>{
-el.style.display=(lang==="el") ? "block":"none";
-});
 
-document.querySelectorAll(".lang-en").forEach(el=>{
-el.style.display=(lang==="en") ? "block":"none";
-});
 
-}
+<script src="script.js"></script>
 
-</script>
+
+</body>
+
+</html>
