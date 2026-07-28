@@ -1,116 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BIBI MUSIC LABEL</title>
 
 <style>
-
 body{
 margin:0;
-background:#0a0a0a;
-color:white;
 font-family:Arial,Helvetica,sans-serif;
-text-align:center;
+background:#0b0b0b;
+color:white;
+}
+
+header{
+background:#111;
+padding:20px 60px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:2px solid gold;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+color:gold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:18px;
 }
 
 .hero{
-padding:90px 20px;
-background:linear-gradient(135deg,#111,#1b1b1b,#000);
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75));
 }
 
-h1{
-font-size:60px;
+.hero h1{
+font-size:70px;
 margin-bottom:10px;
-letter-spacing:3px;
+color:gold;
 }
 
-h2{
-color:#d40000;
+.hero h2{
+font-size:28px;
 font-weight:normal;
 margin-bottom:30px;
 }
 
-p{
-font-size:20px;
-max-width:850px;
-margin:auto;
-line-height:1.7;
-}
-
 .button{
-display:inline-block;
-margin-top:40px;
-padding:16px 35px;
-background:#d40000;
-color:white;
-text-decoration:none;
+background:gold;
+color:black;
+padding:15px 35px;
 font-size:20px;
 border-radius:40px;
-transition:.3s;
-}
-
-.button:hover{
-background:white;
-color:black;
+text-decoration:none;
+font-weight:bold;
 }
 
 section{
-padding:80px 20px;
+padding:80px 10%;
+}
+
+.cards{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
 }
 
 .card{
-background:#181818;
+flex:1;
+min-width:250px;
+background:#171717;
 padding:30px;
 border-radius:15px;
-max-width:900px;
-margin:auto;
+border:1px solid #333;
 }
 
 footer{
-padding:40px;
-background:#000;
-color:#777;
+text-align:center;
+padding:30px;
+background:#111;
+border-top:1px solid #333;
 }
-
 </style>
 
 </head>
 
 <body>
 
+<header>
+
+<div class="logo">BIBI MUSIC LABEL</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Artists</a>
+<a href="#">Releases</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
 <div class="hero">
+
+<div>
 
 <h1>BIBI MUSIC LABEL</h1>
 
 <h2>Independent Record Label</h2>
 
-<p>
-Music • Culture • Vision
-<br><br>
-BIBI Music Label is an independent music company dedicated to discovering,
-developing and promoting exceptional artists.
-We combine creativity, professional management and digital innovation
-to help music reach audiences worldwide.
-</p>
+<a class="button" href="#">Discover More</a>
 
-<a class="button" href="mailto:info@bibimusiclabel.com">
-Contact Us
-</a>
+</div>
 
 </div>
 
 <section>
 
-<div class="card">
-
-<h2>Our Mission</h2>
+<h2 style="color:gold;">ABOUT US</h2>
 
 <p>
-To create long-term careers for artists through professional music production,
-distribution, branding, promotion and strategic management.
+BIBI Music Label is an independent record label dedicated to discovering,
+developing and promoting talented artists through professional music
+production, distribution and promotion.
 </p>
+
+</section>
+
+<section>
+
+<h2 style="color:gold;">OUR SERVICES</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Music Distribution</h3>
+<p>Worldwide digital distribution.</p>
+</div>
+
+<div class="card">
+<h3>Artist Development</h3>
+<p>Professional career management.</p>
+</div>
+
+<div class="card">
+<h3>Music Promotion</h3>
+<p>Marketing and audience growth.</p>
+</div>
 
 </div>
 
