@@ -57,6 +57,27 @@ letter-spacing:3px;
 }
 
 
+.logo span{
+
+color:white;
+
+}
+
+
+.logo span::after{
+
+content:"";
+
+}
+
+
+.logo{
+
+color:white;
+
+}
+
+
 
 .logo img{
 
