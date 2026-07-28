@@ -530,10 +530,11 @@ font-size:35px;
 
 
 }
+
 .bibi{
-color:white;
+color:white !important;
 }
 
 .music-label{
-color:#b00020;
+color:#b00020 !important;
 }
