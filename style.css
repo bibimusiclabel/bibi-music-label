@@ -642,20 +642,3 @@ font-size:18px;
 }
 
 
-.social img{
-
-width:30px;
-height:30px;
-
-object-fit:contain;
-
-transition:.3s;
-
-}
-
-
-.social img:hover{
-
-transform:scale(1.15);
-
-}
