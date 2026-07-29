@@ -641,3 +641,26 @@ transition:.3s;
 transform:scale(1.15);
 
 }
+.social a{
+
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+
+color:white;
+text-decoration:none;
+
+font-size:18px;
+
+}
+
+
+.social img{
+
+width:30px;
+height:30px;
+
+object-fit:contain;
+
+}
