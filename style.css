@@ -627,20 +627,6 @@ background-size:cover;
 }
 
 }
-.social img{
-
-width:35px;
-height:35px;
-transition:.3s;
-
-}
-
-
-.social img:hover{
-
-transform:scale(1.15);
-
-}
 .social a{
 
 display:flex;
@@ -662,5 +648,14 @@ width:30px;
 height:30px;
 
 object-fit:contain;
+
+transition:.3s;
+
+}
+
+
+.social img:hover{
+
+transform:scale(1.15);
 
 }
