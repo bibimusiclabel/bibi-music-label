@@ -632,33 +632,21 @@ background-size:cover;
 display:flex;
 align-items:center;
 justify-content:center;
-gap:10px;
+gap:8px;
 
 color:white;
 text-decoration:none;
 
-font-size:18px;
-
-}
-
-@media(max-width:900px){
-
-.hero-logo{
-height:60px !important;
-}
-
-.hero h1{
-font-size:28px;
-letter-spacing:2px;
-}
-
-.hero h2{
 font-size:16px;
+
 }
 
-.btn{
-padding:10px 25px;
-font-size:14px;
-}
+
+.social img{
+
+width:25px;
+height:25px;
+
+object-fit:contain;
 
 }
