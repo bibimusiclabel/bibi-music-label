@@ -650,19 +650,3 @@ height:25px;
 object-fit:contain;
 
 }
-@media(min-width:901px){
-
-.social img{
-
-width:25px;
-height:25px;
-
-}
-
-.social a{
-
-font-size:16px;
-
-}
-
-}
